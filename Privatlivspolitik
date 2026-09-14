@@ -1,0 +1,27 @@
+# Privatlivspolitik for SkoleOS Anti-log
+
+Sidst opdateret: 14. september 2026
+
+Denne privatlivspolitik forklarer, hvordan browserudvidelsen SkoleOS Anti-log behandler data.
+
+1. Formål
+SkoleOS Anti-log er udviklet med ét centralt formål: at beskytte brugernes og særligt skoleelevers privatliv ved at blokere baggrundstelemetri, unødvendige diagnostiske datalogninger og sporingskald til Google-servere under brug af Google-tjenester (f.eks. Google Docs, Google Classroom, YouTube og Google Søgning).
+
+2. Ingen indsamling af personoplysninger
+SkoleOS Anti-log indsamler, gemmer, sporer eller videresender IKKE nogen former for personlige oplysninger eller browserdata.
+
+Konkret:
+- Ingen personhenførbare data: Vi indsamler ikke navne, e-mails, adresser, IP-adresser eller enheds-ID'er.
+- Ingen login- eller kontodata: Vi har ingen adgang til dine passwords, koder eller Google-konti.
+- Ingen browserhistorik: Vi logger eller overvåger ikke de hjemmesider, du besøger.
+- Ingen indholdslæsning: Vi læser ikke dine dokumenter, lektier, e-mails, videoer eller tastetryk.
+- Ingen analyse- eller sporingsværktøjer: Udvidelsen indeholder ingen eksterne sporingsmoduler eller tredjeparts-API'er.
+
+3. Hvordan fungerer udvidelsen?
+Udvidelsen afvikles 100% lokalt på din egen computer:
+- Netværksblokering (Declarative Net Request): Blokering af telemetri sker lokalt i Chromes egen netværksmotor ud fra faste regler (f.eks. mod play.google.com/log). Udvidelsen læser ikke indholdet af dine anmodninger.
+- Lokal tæller på fanen: Det viste antal blokeringer i udvidelsens popup beregnes udelukkende i browserens midlertidige arbejdshukommelse for den aktive fane og slettes automatisk, når fanen lukkes.
+- Erstatningsscripts (Surrogates): For at forhindre fejl på hjemmesider, når analyseværktøjer blokeres, erstattes visse analysefunktioner med tomme dummy-funktioner lokalt i browseren.
+
+4. Tredjeparter og videresendelse
+Da udvidelsen overhovedet ikke indsamler data, forekommer der ingen videresendelse, intet salg og ingen deling af data med tredjeparter.
